@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Editkaro Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in</h1>
+        <nav>
+            <button class="filter" data-filter="all">All</button>
+            <button class="filter" data-filter="short-form">Short Form</button>
+            <button class="filter" data-filter="long-form">Long Form</button>
+            <button class="filter" data-filter="gaming">Gaming</button>
+            <button class="filter" data-filter="football">Football</button>
+            <button class="filter" data-filter="ecommerce">eCommerce</button>
+            <button class="filter" data-filter="documentary">Documentary</button>
+            <button class="filter" data-filter="color-grading">Color Grading</button>
+            <button class="filter" data-filter="anime">Anime</button>
+        </nav>
+    </header>
+
+    <main id="portfolio">
+        <div class="video-item short-form">
+            <video src="short.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Short Form Video</h3>
+        </div>
+        <div class="video-item long-form">
+            <video src="loong.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Long Form Video</h3>
+        </div>
+        <div class="video-item gaming">
+            <video src="mygame.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Gaming Video</h3>
+        </div>
+        <div class="video-item football">
+            <video src="MVSR.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Football Edits</h3>
+        </div>
+        <div class="video-item ecommerce">
+            <video src="ecm.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>eCommerce Ads</h3>
+        </div>
+        <div class="video-item documentary">
+            <video src="doc.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Documentary Style</h3>
+        </div>
+        <div class="video-item color-grading">
+            <video src="colourgrading.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Color Grading</h3>
+        </div>
+        <div class="video-item anime">
+            <video src="peak.mp4" controls onclick="openLightbox(this)"></video>
+            <h3>Anime Videos</h3>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <video id="lightbox-video" controls></video>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
